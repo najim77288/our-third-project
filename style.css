@@ -4,14 +4,16 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 20px;
+    margin-bottom: 20px;
 }
 .card {
+    margin-top: 20px;
     display: flex;
     height: 120px;
     width: 300px;
     border: 1px solid #ccc;
     border-radius: 8px;
-    padding: 16px;
+    padding: 30px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     text-align: center;
 }
@@ -61,10 +63,175 @@
     font-weight: 800;
 }
 
-@media screen and (max-width: 592px) {
+
+.najim-card{
+    margin-top: 20px;
+    display: flex;
+     height: 200px;
+    width: 700px; 
+    justify-content: space-around;
+   
+}
+.najim-card img{
+    height: 200px;
+    width: 200px;
+}
+.card-content h5{
+    color: #131318;
+    font-family: 'Manrope';
+    font-size: 20px;
+    font-weight: 700;
+}
+.card-content p{
+    color: rgba(19, 19, 24, 0.60);
+    font-family: 'Manrope';
+    font-size: 10px;
+    font-weight: 400;
+    line-height: 26px;
+}
+ .lattwo-div {
+    margin: 50px;
+}
+
+.lattwo-div h4{
+    color: #131318;
+    text-align: center;
+    font-family: Manrope;
+    font-size: 25px;
+    font-weight: 800; 
+}
+
+.lattwo-div p{
+    color: rgba(19, 19, 24, 0.60);
+    text-align: center;
+    font-size: 16px;
+    font-weight: 300;
+} 
+/*  */
+.input-container{
+    display: flex;
+    justify-content: space-around;
+ max-width: 800px;
+  margin: 0 auto;
+}
+
+.mobile{
+    height: 100px;
+    width: 120px;
+    background: rgba(188, 237, 109, 0.10);
+    padding: 10px;
+    margin-left: 30px;  
+    margin: 5px; 
+}
+
+.input-left{
+    margin: 20px;
+}
+.mobile p{
+    font-size: 10px;
+}
+
+.mobile img{
+ height: 30px;
+}
+
+.span-najim{
+    font-size: 10px;
+    font-weight: 800;
+}
+/* input section */
+.input-rght{
+   grid-template-columns: repeat(2, 1fr);
+    margin-top: 10px;
+    gap: 10px;
+}
+.input-rght label{
+    color: #131318;
+    font-family: Manrope;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+.input-rght input{
+    color: rgba(246, 246, 250, 0.3);
+    text-align: center;
+    font-family: Manrope;
+    font-size: 10px;
+    font-weight: 400;
+    background-color: rgb(209, 203, 203);
+    border-radius: 3px;
+}
+
+.footer-div{
+    gap: 30pxpx;
+    font-size: 15px;
+    display: flex;
+    justify-content: space-around;
+    background-color: #131318;
+    color: #ccc;
+    padding: 20px;
+}
+.footer-div p{
+    font-size: 10px;
+}
+
+.div-1 p{
+    font-size: 7px;
+    width: 40px;
+}
+
+/* responsive for mobile */
+@media screen and (max-width: 500px) {
     .helal-div{
+        margin: 20px;
         display: grid;
         grid-template-columns: repeat(1, 1fr);
         gap: 20px;
     }
+
+    .najim-card{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 10px;
+    }
+    .najim-card img {
+        width: 290px;
+        border-radius: 8px;
+    }
+
+    .card-content p{
+        text-align: justify;
+        line-height: 10px;
+    }
+
+    .lattwo-div {
+       margin-top: 20px;
+    }
+    .footer-div{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 10px;
+        text-align: center;
+    }
+    .div-1 p {
+        width: auto;
+    }
+
+    .input-container{
+        display: grid;
+        grid-template-columns: 1, 1fr;
+    }
+    .mobile{
+        width: 400px;
+        text-align: center;
+        align-items: center;
+    }
+ .input-rght{
+    width: 400px;
+    text-align: center;
+    align-items: center;
+ }
+    
+    
 }
